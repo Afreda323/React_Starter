@@ -92,11 +92,6 @@
       "react-app"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier && npm run lint && npm test"
-    }
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
