@@ -49,11 +49,13 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "clear_jest": "jest --clearCache"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
+      "src/**/*.{js,jsx,mjs}",
+      "!src/index.js"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
