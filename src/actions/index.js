@@ -3,7 +3,7 @@ const ASYNC_TYPES = ['REQUEST', 'SUCCESS', 'FAILURE']
 /**
  * Create an action
  * @param {String} type
- * @param {*} payload
+ * @param {Object} payload
  */
 export const action = (type, payload = {}) => ({ type, ...payload })
 
