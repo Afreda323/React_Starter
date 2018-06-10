@@ -50,7 +50,9 @@
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage",
     "lint": "eslint src",
-    "clear_jest": "jest --clearCache"
+    "clear_jest": "jest --clearCache",
+    "flow-init": "flow init",
+    "flow": "flow status"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -105,6 +107,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
+    "flow-bin": "^0.74.0",
     "pre-commit": "^1.2.2"
   }
 }
