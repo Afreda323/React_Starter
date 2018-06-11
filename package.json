@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "auth0-js": "^9.6.1",
     "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
     "babel-core": "6.26.0",
-    "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
     "babel-preset-react-app": "^3.1.1",
@@ -21,12 +22,14 @@
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
+    "history": "^4.7.2",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
+    "prop-types": "^15.6.1",
     "raf": "3.4.0",
     "react": "^16.3.2",
     "react-dev-utils": "^5.0.1",
@@ -52,7 +55,7 @@
     "lint": "eslint src",
     "clear_jest": "jest --clearCache",
     "flow-init": "flow init",
-    "flow": "flow status"
+    "flow": "flow"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -102,6 +105,7 @@
     "test:coverage"
   ],
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": "^4.10.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
