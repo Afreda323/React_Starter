@@ -9,6 +9,8 @@ module.exports = {
         "import/no-named-as-default": 0,
         "import/no-named-as-default-member": 0,
         "react/prop-types": 0,
+        "linebreak-style": 0,
+        "arrow-parens": 0,
     },
     "env": {
         "browser": true,
