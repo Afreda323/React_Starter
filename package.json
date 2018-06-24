@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.6.4",
     "auth0-js": "^9.6.1",
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
@@ -40,6 +41,7 @@
     "redux-saga": "^0.16.0",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
+    "styled-components": "^3.3.3",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",

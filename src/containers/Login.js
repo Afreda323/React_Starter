@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
+import LoginCard from '../components/LoginCard'
 
 export default class Login extends Component {
   login = () => {
@@ -11,9 +13,14 @@ export default class Login extends Component {
     const { isAuthenticated } = this.props.auth
     return (
       <div>
-        {isAuthenticated()
-          ? <button onClick={this.logout}>Logout</button>
-          : <button onClick={this.login}>Login</button>}
+        {isAuthenticated() ? (
+          <Redirect to="/home" />
+        ) : (
+          <LoginCard
+            welcomeText="This is a cool app that does some very cool things. In hope you like it."
+            onLogin={this.login}
+          />
+        )}
       </div>
     )
   }
