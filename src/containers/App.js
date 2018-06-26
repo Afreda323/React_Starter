@@ -6,7 +6,7 @@ import store from '../store'
 import Auth from '../services/Auth'
 
 import Login from './Login'
-import Home from './Home'
+import Content from './Content'
 import Callback from './Callback'
 
 import PrivateRoute from '../components/PrivateRoute'
@@ -29,8 +29,8 @@ const App = () => (
         />
         <PrivateRoute
           auth={auth}
-          path="/home"
-          component={props => <Home auth={auth} {...props} />}
+          path="/app"
+          component={props => <Content auth={auth} {...props} />}
         />
         <Route
           path="/callback"

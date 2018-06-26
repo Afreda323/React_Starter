@@ -18,7 +18,7 @@ class Auth {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult)
-        window.location = '/home'
+        window.location = '/app/home'
       } else if (err) {
         console.log(err)
       }
