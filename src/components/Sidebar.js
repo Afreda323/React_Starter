@@ -25,7 +25,7 @@ const Sidebar = ({
     collapsed={collapsed}
     onCollapse={onCollapse}
   >
-    <Logo src={logoSrc} logoAlt={logoAlt} />
+    <Logo src={logoSrc} logoAlt={logoAlt} collapsed={collapsed} />
     <Menu
       mode="inline"
       theme="light"
@@ -79,6 +79,7 @@ Sidebar.defaultProps = {
 const Logo = styled.img`
   width: 100%;
   padding: 20px;
+  ${({ collapsed }) => collapsed && 'padding: 20px 0'};
 `
 
 export default Sidebar
