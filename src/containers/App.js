@@ -24,7 +24,8 @@ const App = () => (
     <BrowserRouter>
       <div>
         <Route
-          path="/login"
+          exact
+          path="/"
           component={props => <Login auth={auth} {...props} />}
         />
         <PrivateRoute

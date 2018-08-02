@@ -5,7 +5,6 @@ class Auth {
     domain: process.env.REACT_APP_AUTH0_DOMAIN,
     clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
     redirectUri: process.env.REACT_APP_AUTH0_REDIRECT,
-    audience: process.env.REACT_APP_API_URL,
     responseType: 'token id_token',
     scope: 'openid',
   })
@@ -39,7 +38,7 @@ class Auth {
     localStorage.removeItem('id_token')
     localStorage.removeItem('expires_at')
 
-    window.location = '/login'
+    window.location = '/'
   }
 
   isAuthenticated = () => {
